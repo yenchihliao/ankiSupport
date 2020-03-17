@@ -7,7 +7,7 @@ class SearchVoc(Operation):
         self.prefix = "search: "
     # Print all the linked entry of w
     def do(self, w):
-        print('searching: ', w)
+        w = w[0]
         if w in self.words.keys():
             for ww in self.words[w]['links']:
                 print(self.words[ww])
